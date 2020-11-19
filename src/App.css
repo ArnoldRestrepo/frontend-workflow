@@ -1,0 +1,93 @@
+/* This Example use SMACSS */
+
+/* 1. BASE */
+:root {
+  --white: #eee5e9;
+  --black: #0c090d;
+  --gray: #6a686b;
+  --blue: #2274a5;
+  --yellow: #e6af2e;
+  --default-radius: 8px;
+}
+body {
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  font-family: 'Open Sans', helvetica, sans-serif;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #dfdfdf;
+}
+
+/* Layout */
+.l-col-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.l-col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Modules */
+.title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.Detail {
+  width: 400px;
+  height: auto;
+  box-sizing: border-box;
+  padding: 1rem;
+  background: var(--white);
+  border: 1px solid var(--gray);
+  border-radius: var(--default-radius);
+}
+
+.Detail__title {
+  text-align: center;
+  margin: 0 0 2rem 0;
+  color: var(--blue);
+}
+
+.Icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Icon__title {
+  color: var(--blue);
+  margin: 0 0 0.5rem 0;
+  text-align: center;
+}
+
+.Icon__img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+}
+
+.Icon__text {
+  font-weight: regular;
+}
+
+.Line {
+  border-top: 0.5px solid gray;
+}
+
+.Data {
+  text-align: center;
+}
+
+.Data__title {
+  margin: 1rem 0 0.5rem 0;
+}
+
+.Data__text {
+  margin: 0 0 1rem 0;
+}
